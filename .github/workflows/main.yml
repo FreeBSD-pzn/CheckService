@@ -32,5 +32,5 @@ jobs:
       - name: List files in the repository and then compile services.c
         run: |
           ls ${{ github.workspace }}
-          cc -o services services.c
+          cc -o checkservice checkservice.c
       - run: echo "This job's status is ${{ job.status }}."
