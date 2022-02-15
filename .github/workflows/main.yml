@@ -29,7 +29,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v2
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
-      - name: List files in the repository and then compile services.c
+      - name: List files in the repository and then compile checkservice.c
         run: |
           ls ${{ github.workspace }}
           cc -o checkservice checkservice.c
